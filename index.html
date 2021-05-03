@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HouseVOP HOME</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway&display=swap" rel="stylesheet">
+  <script src="assets/js/scripts.js"></script>
+</head>
+<body id="top">
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <div class="header__logo logo">
+          <a href="#top" class="top">
+            <div class="logo__preview font-jaffna3654 logo__hover">HouseVOP</div>
+            <div class="logo__text font-raleway1214 logo__hover">ЖИЛОЙ КОМПЛЕКС</div>
+          </a>
+        </div>
+        <input class="menu__toggle" id="menu__toggle" type="checkbox" />
+          <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+        <div class="hamburger-menu">
+          <nav class="header__navigate">
+            <ul autofocus class="navigate font-raleway1416">
+              <li><a tabIndex="1" class="navigate__link active" href="#">О комплексе</a></li>
+              <li><a tabIndex="2" class="navigate__link" href="#">Район</a></li>
+              <li><a tabIndex="3" class="navigate__link" href="#">Каталог квартир</a></li>
+              <li><a tabIndex="4" class="navigate__link" href="#">Ипотека</a></li>
+              <li><a tabIndex="5" class="navigate__link" href="#">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="intro">
+      <div class="intro__container container">
+        <div class="container__centre">
+          <H1 class="font-playfair4864"
+            >Жилой комплекс <br>
+            в историческом центре</H1>
+          <img class="container__mouse" src="assets/img/main/intro/mouse.svg" alt="Прокрутите вниз">
+          <div class="container__info">
+            <div class="container__placeholder-block font-raleway1821">
+               <a class="container__geo" href="https://www.google.com/maps/place/59%C2%B056'10.3%22N+30%C2%B020'35.0%22E/@59.936192,30.343042,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d59.936192!4d30.343042" target="_blank">
+                <img class="container__placeholder" src="assets/img/main/intro/placeholder.svg" alt="local">
+                Наб. реки Фонтанки 10-15
+              </a>
+            </div>
+            <div class="container__phone-block font-raleway1821">
+              <a class="container__phonenumber" href="tel:+78121234567">
+                <img class="container__phone" src="assets/img/main/intro/phone.svg" alt="phone">
+                8 (812) 123-45-67
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonials">
+      <div class="testimonials__advertising font-raleway1416">
+        <div class="testimonials__content">
+          <img class="testimonials__img" src="assets/img/main/testimonials/bench.svg" alt="bench">
+          Рядом исторические <br> парки и скверы
+        </div>
+        <div class="testimonials__content">
+          <img class="testimonials__img" src="assets/img/main/testimonials/building.svg" alt="building">
+          Полностью <br> обустроенный
+        </div>
+        <div class="testimonials__content">
+          <img class="testimonials__img" src="assets/img/main/testimonials/fountain.svg" alt="fountain">
+          10 фонтанов <br> на территории
+        </div>
+        <div class="testimonials__content arabic-cursor">
+          <img class="testimonials__img" src="assets/img/main/testimonials/bicycle.svg" alt="bicycle">
+          6 км <br> велодорожек
+        </div>
+      </div>
+      <div class="appartments">
+        <div class="appartments__container">
+          <h2 class="appartments__title font-playfair3648 arabic-cursor">Наши квартиры</h2>
+          <div class="appartments__collage slider font-raleway2428">
+            <div class="foto slider__item">
+              <img src="assets/img/main/testimonials/Rectangle1.jpg" alt="fotoloft" class="fotoloft">
+            </div>
+            <div class="foto slider__item">
+              <img src="assets/img/main/testimonials/Rectangle2.jpg" alt="fotoloft" class="fotoloft">
+            </div>
+            <div class="foto slider__item">
+              <img src="assets/img/main/testimonials/Rectangle1.jpg" alt="fotoloft" class="fotoloft">
+            </div>
+            <div class="foto slider__item">
+              <img src="assets/img/main/testimonials/Rectangle2.jpg" alt="fotoloft" class="fotoloft">
+            </div>
+            <a class="slider__previous" onclick="previousSlide()">&#10094;</a>
+            <a class="slider__next" onclick="nextSlide()">&#10095;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="preview">
+      <div class="content-block">
+        <div class="preview__viewer">
+          <h3 class="preview__title-preview font-playfair3648">Хотите посмотреть?</h3>
+          <div class="preview__title-text font-raleway1624">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" 
+            для текстов на латинице с начала XVI века. В то время 
+            некий безымянный печатник создал большую коллекцию 
+            размеров и форм шрифтов, используя Lorem Ipsum для 
+            распечатки образцов. 
+          </div>
+        </div>
+        <div>
+          <form class="preview__form-record" name="recordform" onsubmit="return sendfunction()">
+            <input class="forminput font-raleway1416" id ="pname" name ="preview-name" type="text" placeholder="Ваше имя" required></input>
+            <input class="forminput font-raleway1416" id ="pphone" name ="preview-phone" type="tel" placeholder="Ваш телефон" minlength="11" required></input>
+            <span class="formtext font-raleway1214">*Мы никому не передаем ваши данные. 
+              И не сохраняем ваш номер в базу.</span>
+            <button class="formbutton font-raleway1416" id="psend" type="submit">Посмотреть район</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="demonstration">
+      <div class="demonstration__container">
+        <div class="demonstration__video">
+          <video width="719" height="650" src="#" onclick="vidblockplay()" class="trackvideo" id="video-preview" poster="assets/img/main/demonstration/video.jpg" controls></video>
+        </div>
+        <div class="wrapper" onclick="vidplay()">
+          <img src="assets/img/main/demonstration/play-btn.svg" class="vidplay" id="play" alt="play">
+        </div>
+      </div>
+    </div>
+    <div class="geolocation">
+      <div class="geolocation__container">
+        <div class="geolocation__wrapper">
+          <h3 class="font-playfair3648">Район на карте</h3>
+        </div>
+        <map class="gomaps">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.7557892758232!2d30.340866916096875!3d59.93619438187525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTnCsDU2JzEwLjMiTiAzMMKwMjAnMzUuMCJF!5e0!3m2!1sru!2sru!4v1619452543110!5m2!1sru!2sru" width="1110" height="358" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </map>
+      </div>
+    </div>
+    <div class="questions">
+      <div class="questions__content-block">
+        <div class="questions__viewer">
+          <h3 class="questions__title-preview font-playfair3648">Есть вопросы?</h3>
+        </div>
+        <div class="questions__info">
+          <form class="questions__form-record" name="recordformQuestion" onsubmit="return sendfunctionQuestion()">
+            <span class="formtext font-raleway1214">*Мы никому не передаем ваши данные. 
+              И не сохраняем ваш номер в базу.</span>
+            <div class="questions__formelem">
+              <input class="forminput font-raleway1416" id ="qname" name ="questions-name" type="text" placeholder="Ваше имя" required></input>
+              <input class="forminput font-raleway1416" id ="qphone" name ="questions-phone" type="tel" placeholder="Ваш телефон" minlength="11" required></input>
+              <button class="formbutton font-raleway1416" id="qsend" type="submit">Посмотреть район</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__logo logo">
+          <div class="logo__preview font-jaffna3654">HouseVOP</div>
+          <div class="logo__text font-raleway1214">ЖИЛОЙ КОМПЛЕКС</div>
+        </div>
+        <div class="footer__navigate-first">
+          <ul class="footer__navigate font-raleway1416">
+            <li><a class="footer__link" href="#">О комплексе</a></li>
+            <li><a class="footer__link" href="#">Район</a></li>
+            <li><a class="footer__link" href="#">Каталог квартир</a></li>
+            <li><a class="footer__link" href="#">Ипотека</a></li>
+            <li><a class="footer__link" href="#">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="footer__navigate-second">
+          <ul class="footer__navigate font-raleway1416">
+            <li><a class="footer__link" href="#">О комплексе</a></li>
+            <li><a class="footer__link" href="#">Район</a></li>
+            <li><a class="footer__link" href="#">Каталог квартир</a></li>
+            <li><a class="footer__link" href="#">Ипотека</a></li>
+            <li><a class="footer__link" href="#">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="footer__navigate-contacts">
+          <ul class="footer__navigate font-raleway1416">
+            <li><span class="footer__link">Адрес: Наб. реки Фонтанки 10-15</span></li>
+            <li><span class="footer__link">Телефон: 8 (812) 123-45-67</span></li>
+            <li><span class="footer__link">Отдел продаж: 10:00 - 20:00</span></li>
+            <li><span class="footer__link">E-mail: <span class="email-style">vip@housevip.ru</span></span></li>
+            <li>
+              <ul class="navigate__logos">
+                <li class="socials"><a class="navigate__link-logo" href="https://www.youtube.com/" target="_blank"><img src="assets/img/footer/youtube.svg" alt="youtube"></a></li>
+                <li class="socials"><a class="navigate__link-logo" href="https://vk.com/" target="_blank"><img src="assets/img/footer/vk.svg" alt="vk"></a></li>
+                <li class="socials"><a class="navigate__link-logo" href="https://ru-ru.facebook.com/" target="_blank"><img src="assets/img/footer/facebook.svg" alt="facebook"></a></li>
+                <li class="socials"><a class="navigate__link-logo" href="https://www.instagram.com/?hl=ru" target="_blank"><img src="assets/img/footer/instagram.svg" alt="instagram"></a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
