@@ -1109,6 +1109,7 @@ input[type="text"].forminput::-moz-placeholder {
   .container__centre {
     width: 100%;
     padding: 0;
+    margin: 0 0 150px 0;
   }
   .navigate__link {
     margin: 0 0 0 10px;
@@ -1134,8 +1135,6 @@ input[type="text"].forminput::-moz-placeholder {
     font-size: 35px;
   }
   .container__centre {
-    width: 100%;
-    padding: 0;
     margin: 0 0 170px 0;
   }
   .preview__viewer {
